@@ -102,12 +102,29 @@
         .login{
             color: rgb(123, 123, 123);
         }
+        
+
+/* Styles for mobile view */
+@media (max-width: 767px) {
+    .main-div {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically on mobile */
+    }
+    .first-div {
+        order: 2; /* Display below on mobile */
+    }
+
+    .main-container {
+        order: 1; /* Display above on mobile */
+    }
+}
+
 
     </style>
 </head>
 <body>
     <div class="main-div">
-        <div>
+        <div class="first-div">
             <div class="first-logo">
                 <img src="./altschool logo.jpeg">
             </div>
