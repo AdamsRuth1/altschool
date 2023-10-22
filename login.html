@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="shortcut icon" href="./altschool logo.jpeg">
+    <title>Password Show & hide</title>
+    <style>
+        
+        
+        .main-div{
+            display: flex;
+        }
+        .first-logo{
+            display: inline-block;
+        }
+        .learn-div {
+            width: 90%;
+            margin-top: 100px;
+            text-align: center;
+        }
+        .learn-div h1{
+            font-size: 2.1875rem;
+             line-height: 40px;
+        }
+        footer {
+            text-align: center; /* Center-align the icons */
+            background-color: white; /* Set a background color for the footer */
+            padding: 20px 0; /* Add some padding to the footer for spacing */
+          }
+          
+          .social-media-list {
+            list-style: none; /* Remove bullet points from the list */
+            padding: 90px; /* Remove default padding from the list */
+            
+          }
+          
+          .social-media-list li {
+            display: inline-block; /* Display icons horizontally */
+            margin-right: 20px; /* Add space between icons */   
+          }
+          .fab.fa-twitter,
+          .fab.fa-instagram,
+          .fab.fa-facebook,
+          .fa-brands.fa-linkedin{
+            color: black;
+          }
+        h1 {
+            font-size: 25px;
+            font-family: almarena,sans-serif;
+        }
+        #login-form input[type="password"],
+        #login-form input[type="text"]{
+            width: 100%;
+            padding: 12px 36px 12px 12px;
+            box-sizing: border-box;
+            border-radius: 3px;
+            border: 2px solid rgb(219, 204, 204);
+            margin-top: 5px;
+        }
+        .password-container {
+            width: 100%;
+            position: relative;
+            padding-bottom: 20px;
+        }
+        .email-container{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .fa-eye{
+            position: absolute;
+            top: 40%;
+            right: 5px;
+            cursor: pointer;
+            color: lightgrey;
+        }
+       
+        button{
+            padding: 15px ;
+            width: 100%;
+            background-color: rgb(106, 111, 245);
+            color: rgb(255, 255, 255);
+            font-family: Almarena,sans-serif;
+            border-radius: 4px;
+            border: none;    
+            cursor: pointer;
+        }
+       .reset-container {
+        text-align: center;
+        line-height: 15px;
+       }
+        img{
+           height: 80px;
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+            width: 80px;
+            margin-top: 30px;
+        }
+        .login{
+            color: rgb(123, 123, 123);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div>
+            <div class="first-logo">
+                <img src="./altschool logo.jpeg">
+            </div>
+            <section class="learn-div">
+                <h1>Learn highly sought after skills without hassle</h1> 
+                <p>Earn a Diploma in highly-sought after skills</p>
+           </section>
+                
+            <footer>
+                <ul class="social-media-list">
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://www.facebook.com/YourPage"><i class="fab fa-facebook"></i></a></li>
+                  <li><a href="https://www.facebook.com/YourPage"><i class="fa-brands fa-linkedin"></i></i></a></li>
+                </ul>
+
+              </footer>
+        </div>
+       
+        <div class="main-container">
+            <div class="logo">
+                <img src="./altschool logo.jpeg" />
+                   </div>
+            <h1>Sign In</h1>
+            <p class="login">Enter your email address and password to log in to AltSchool Student Portal</p>
+            <form action="/login" method="post" id="login-form">
+                <div class="email-container">
+                    <label>Email Address</label>
+                <input type="text" placeholder="user@sample.com">
+                </div>
+                <div class="password-container">
+                    <label>Password</label>
+                    <input type="password" id="password"
+                    name="password" placeholder="***********">
+                    <i class="fa-solid fa-eye"
+                    id="show-password"></i>
+                </div>
+            </form>
+            <button type="submit">
+                <span>Proceed to dashboard</span> 
+               </button>
+           <div class="reset-container">
+            <p> Forgot password? <a href="https://portal.altschoolafrica.com/auth/password/reset">Reset Now!</a> </p>
+           <p> Don't have an account yet? <a href="https://portal.altschoolafrica.com/auth/create-account"> Apply Now!</a></p>
+           </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
